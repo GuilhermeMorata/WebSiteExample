@@ -1,0 +1,287 @@
+.header{
+    background-color:var(--cor-tree);
+}
+.navmenu{
+    position: fixed;
+    background-color: transparent;
+    color: var(--cor-tree);
+    font-size: 25px;
+    text-indent: 15px;
+    width: 100%;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+}
+.navmenu button:hover{
+    color: var(--cor-five);
+    text-decoration: underline;
+}
+.navmenuclose{
+    position: fixed;
+    z-index: 2;
+    background: linear-gradient(to top right,var(--cor-one) 0%,var(--cor-four) 100%);
+    color: var(--cor-five);
+    font-size: 20px;
+    width: 100%;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px  rgb(0, 0, 0,60%);
+    padding: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.navmenuclose .titlemenu h1{
+    border: 16px solid var(--cor-tree);
+    padding: 10px;
+    background-color: var(--cor-two);
+    border-radius: 5px;
+    margin-top: 20px;
+    align-self: baseline;
+}
+.navmenuclose button:hover{
+    color: var(--cor-five);
+    text-decoration: underline;
+}
+
+.navmenudetail{
+    z-index: 2;
+    background: linear-gradient(to top right,var(--cor-one) 0%,var(--cor-four) 100%);
+    color: var(--cor-five);
+    font-size: 20px;
+    width: 100%;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px  rgb(0, 0, 0,60%);
+    padding: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.navmenudetail .titlemenu h1{
+    border: 16px solid var(--cor-tree);
+    padding: 10px;
+    background-color: var(--cor-two);
+    border-radius: 5px;
+    margin-top: 20px;
+    align-self: baseline;
+}
+.navmenudetail button:hover{
+    color: var(--cor-five);
+    text-decoration: underline;
+}
+
+
+
+.loginmenu{
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    justify-content: space-between;
+}
+.loginmenu button{
+    height: 25px;
+    width: 100%;
+    color: var(--cor-tree);
+    margin: 0px 5px 0px 5px;
+    font-size: 25px;
+    background-color: transparent;
+    box-shadow: 0px;
+    border: 0px;
+}
+
+.textslid{
+    color: black;
+    font-size: 60px;
+    position:absolute;
+    top:320px;
+    left:5vw;
+    line-height: 60px;
+    animation: textslide 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both
+   
+   
+
+}
+.textslid strong{
+    font-size: 20px;
+    align-self: center;
+    justify-self: center;
+    color: var(--cor-five);
+}
+.textslid h1{
+    color: var(--cor-four);
+    font-size: 75px;
+
+}
+
+
+.titlemenu{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-items: stretch;
+}
+.imgmenu{
+  width: 98.5vw;
+  padding: 5px;
+  height: 800px;
+}
+.iconmenu{
+    height: 30px;
+    width: 30px;    
+}
+
+
+
+.whastzap{
+    width: 10vw;
+    height: 10vh;
+    top: 80vh;
+    position: fixed;
+    z-index: 2;
+    right: 7px;
+    fill: var(--cor-five);
+    animation: email 13s infinite cubic-bezier(0,1.95,0,10.0);
+}
+
+@media(max-width:800px) {
+    .navmenu{
+        flex: row;
+        color: black;
+        margin: 0px;
+        padding: 0px;
+        font-size: 10px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .navmenuclose{
+        flex: row;
+        color: black;
+        margin: 0px;
+        padding: 0px;
+        font-size: 10px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .loginmenu{
+        position: relative;
+        float: none;
+        align-items: flex-start;
+        justify-items: center;
+    }
+    .loginmenu button{
+        font-size: 15px;
+        margin: 0px;
+        padding-left: 5px;
+        color: var(--cor-five);
+    }
+    .navmenuclose .titlemenu h1{
+        border: 5px solid var(--cor-tree);
+        padding: 2px;
+        background-color: var(--cor-two);
+        border-radius: 5px;
+        margin: 5px;
+        align-self: baseline;
+    }
+    .navmenuclose button:hover{
+        color: var(--cor-five);
+        text-decoration: underline;
+    }
+    .searchall{
+      display: none;
+    }
+    .textslid{
+        display: none;
+    }
+    .textslid h1{
+        display: none;
+    }
+    .imgmenu{
+        right: 30vw;
+        width:100vw;
+        height:600px;
+    }
+    .navmenudetail{
+        flex: row;
+        color: black;
+        margin: 0px;
+        padding: 0px;
+        font-size: 10px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+@keyframes whatssap {
+    0%{
+      transform: translateX(0%);
+      transform: rotateX(0);
+     
+    }
+    5% {
+      transform: rotate(-1deg); 
+
+    }
+    7.5% {
+      transform: rotate(1deg);
+      
+    }
+    10%{
+        transform: rotate(-1deg);
+      
+      }
+    12.5%{
+        transform: rotate(1deg);
+    
+    }
+    15% {
+    transform: rotate(-1deg); 
+
+    }
+    17.5% {
+    transform: rotate(1deg);
+
+    }
+    20%{
+        transform: rotate(-1deg);
+
+    }
+    22.5%{
+        transform: rotate(1deg);
+
+    }
+    25%{
+        transform: rotate(0);
+        transform: rotateX(0);
+    }
+    100%{
+
+    }
+}
+
+@keyframes textslide {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+      }
+      40% {
+        opacity: 0.6;
+      }
+      100% {
+        opacity: 1;
+      }
+}
+

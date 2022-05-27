@@ -1,0 +1,15 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+    font-family: Franklin Gothic Medium;
+    --cor-one:  #5f939c;
+    --cor-two: #f0ece2;
+    --cor-tree: #ffff;
+    --cor-four: #596e79;
+    --cor-five: rgb(20, 220, 220);
+
+}
+
+body{
+    background-color: var(--cor-two);
+}

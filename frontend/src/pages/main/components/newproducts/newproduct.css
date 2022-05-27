@@ -1,0 +1,114 @@
+.bodynewproduct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    height: 96.5vh;
+}
+.bodynewproduct form{
+    height: 50vh;
+    width: 40vw;
+    padding: 20px;
+    display: flex;
+    border-radius: 30px;
+    border: white 2px solid;
+    box-shadow: 10px 15px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    background-color: whitesmoke;
+}
+.bodynewproduct form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 5vh;
+    width: 100%;
+}
+.bodynewproduct form div input , select ,textarea{
+    margin-top: 20px;
+    border: var(--cor-one) 1px solid;
+    height: 30px;
+    background-color: white;
+    text-indent: 10px;
+    border-radius: 25px;
+    margin-top: 5px;
+}
+.bodynewproduct button{
+    width: 70%;
+    height: 4vh;
+    margin-top: 10px;
+    border: var(--cor-one)  5px solid;
+    border-radius: 25px;
+    font-size: 33px;
+    text-align: center;
+    color: var(--cor-one) ;
+    background-color: white;
+}
+.preview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+    border: 2px solid white;
+    box-shadow: 10px 15px;
+    border-radius: 20px;
+    margin-left: 80px;
+    flex-direction: column;
+    min-width: 325px;
+    min-height: 200px;
+    max-height: 500px;
+    background: whitesmoke;
+}
+.previewcontent{
+    display: flex;
+    width: 300px;
+    margin: 10px;
+    flex-direction: column;
+    overflow: scroll;
+    scrollbar-track-color: transparent;
+}
+.previewcontent::-webkit-scrollbar{ 
+    display: none;
+  }
+
+
+.previewimg{
+    margin-top: 10px;
+    width: 300px;
+    height: 200px;
+}
+
+@media (max-width:800px){
+    .bodynewproduct{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        background: transparent;
+        height: 100vh;
+        width: 100vw;
+   }
+   .bodynewproduct button{
+        height: 6vh;
+   }
+
+   .bodynewproduct form{
+        height: 50vh;
+        width: 80vw;
+   }
+
+   .preview{
+        min-width: 50vw;
+        min-height: 25vh;
+        max-height: 70vw;
+        margin-left: 0px;
+   }
+
+   .previewcontent{
+        width: 75vw;
+   }
+
+}

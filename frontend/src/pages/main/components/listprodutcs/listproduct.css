@@ -1,0 +1,168 @@
+.cardscontent{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-top: 40px;
+    border: 2px solid whitesmoke;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 90vw;
+    min-height: 100vh;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+    height: 45vh;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    justify-content: flex-start;
+    background-color: whitesmoke;
+    box-shadow: 10px 15px;
+    border: 2px solid white;
+    border: 2px solid black;
+  
+
+}
+
+.contentimgs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    height: 10vh;
+    margin: 5px;
+    overflow: scroll;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contentimgs:hover{
+    z-index: 2;
+
+}
+
+.contentimgs img{
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px 0px 10px;
+}
+
+.contentimgs img:hover{
+    position: absolute;
+    top: 20vw;
+    right: 30vw;
+    left: 30vw;
+    z-index: 2;
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+    width: 620px;
+    height: 400px;
+}
+
+.contentinputs{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;  
+}
+.contentinputs input{
+    margin: 5px;
+}
+
+.divcard{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contentbuttons{
+    align-self: center;
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    width: 100%;
+}
+.contentbuttons button{
+    width: 7vw;
+    height: 4vh;
+    margin-top: 10px;
+    border: var(--cor-one) 5px solid;
+    border-radius: 25px;
+    font-size: 24px;
+    text-align: center;
+    color: var(--cor-one);
+    background-color: white;
+}
+
+
+
+.load{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 40px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.loadcirle{
+    margin:10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #e66465;
+    animation: load 1.9s infinite linear;
+}
+
+@keyframes load {
+0%{
+    transform:translatey(0px);
+    background-color: #f33232;
+    }
+50%{
+    transform:translatey(-50px);
+    background-color:#3acc59 ;
+    }
+100%{
+    transform:translatey(0px);
+    background-color: #505ce0;
+    }
+}
+
+.open{
+    display: none;
+}
+
+
+@media (max-width:800px){
+  .cardscontent{
+    min-width: 100vw;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .card{
+    width: 80vw;
+    height: 60vh;
+  }
+  .contentbuttons{
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+  .contentbuttons button{
+      width: 40vw;
+  }
+
+}

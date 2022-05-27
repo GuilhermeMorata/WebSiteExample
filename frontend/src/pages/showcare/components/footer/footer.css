@@ -1,0 +1,69 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    align-content: center;
+    background: linear-gradient(to top right,var(--cor-one) 0%,var(--cor-four) 100%);
+}
+.footer h1{
+    color: var(--cor-tree);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+.footer h1 span {
+    font-size: 22px;
+    align-self: center;
+    color: var(--cor-four);
+    text-indent: 15px;
+
+}
+
+.footerrede{
+    height: 40px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.footerrede a{
+    display: flex;  
+    padding: 5px;
+    width: 50px;
+    height: 40px;
+    align-items: center;
+}
+.footerrede a svg{
+    fill: var(--cor-tree);
+    height: 100%;
+    width: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+.card svg{
+
+    height: 50px;
+}
+.card a{
+    position: absolute; 
+}
+@media (max-width:900px) {
+    .footer{
+        font-size: 10px;
+        padding: 0px;
+    }
+    .footerrede a svg{
+        width: 25px;
+        height: 40px;
+        margin:2ps;
+    }
+}

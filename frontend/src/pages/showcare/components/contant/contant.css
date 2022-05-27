@@ -1,0 +1,197 @@
+.contantbox {
+    border-radius: 5px;
+    background-color:var(--cor-two);
+    padding: 10px;
+}
+.contantintro{
+    display: flex;
+    margin: 20px;
+    font-size: 25px;
+    color: var(--cor-four);
+    flex-direction: column;
+    align-items: center;
+}
+.contantintro h1{
+    margin: 15px;
+}
+.contantintro p {
+    margin: 0px;
+    color: rgb(20, 220, 220);
+}
+.contemail{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+  
+}
+
+.contentright{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.contentright h1{
+    color: var(--cor-four);
+    margin-bottom: 30px;
+    font-size: 55px;
+}
+.contentinfos{
+    height: 100%;
+}
+.contentinfos h1{
+    color: var(--cor-four);
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.contentinfos p{
+    color: rgb(20, 220, 220);
+    font-size: 25px;
+}
+.contentinfos hr{
+    color: var(--cor-four);
+    height: 3px;
+    margin: 10px 0px 10px 0px;
+
+}
+.contentnumber{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    text-indent: 10px;
+}
+.contentnumber svg{
+    width: 30px;
+    height: 30px;
+    fill:var(--cor-four) ;
+}
+
+
+
+
+.contentleft{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.iconemail{
+    height: 10em;
+    width: 50%;
+    fill: var(--cor-four);
+    animation: email 13s infinite cubic-bezier(0,1.95,0,10.0);
+}
+.contantform{
+    display: flex;
+    width: 50%;
+    text-align: center;
+    font-size: 25px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contantform label{
+    color: rgb(20, 220, 220);
+}
+.contantform input{
+    margin: 5px;
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+    text-indent: 10px;
+}
+.contantform select{
+    height: 35px;
+}
+.contantform textarea{
+    resize: none;
+    height: 100px;
+}
+.contantform a{
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 25px;
+    align-self: center;
+    color: #596e79;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--cor-two);
+    border: 5px solid whitesmoke;
+    border-radius: 25px;
+}
+
+
+@media (max-width:900px){
+    .contantbox{
+        padding: 15px;
+    }
+    .contantintro{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .contantintro h1{
+        font-size: 24px;
+    }
+    .contemail{
+        flex-direction: column;
+        align-items: center;
+    }
+    .iconemail{
+        height: auto;
+    }
+    .contantform{
+        width: 100%;
+    }
+}
+
+
+@keyframes email {
+    0%{
+      transform: translateX(0%);
+      transform: rotateX(0);
+     
+    }
+    5% {
+      transform: rotate(-1deg); 
+
+    }
+    7.5% {
+      transform: rotate(1deg);
+      
+    }
+    10%{
+        transform: rotate(-1deg);
+      
+      }
+    12.5%{
+        transform: rotate(1deg);
+    
+    }
+    15% {
+    transform: rotate(-1deg); 
+
+    }
+    17.5% {
+    transform: rotate(1deg);
+
+    }
+    20%{
+        transform: rotate(-1deg);
+
+    }
+    22.5%{
+        transform: rotate(1deg);
+
+    }
+    25%{
+        transform: rotate(0);
+        transform: rotateX(0);
+    }
+    100%{
+
+    }
+}
