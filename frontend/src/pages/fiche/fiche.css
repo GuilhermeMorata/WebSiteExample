@@ -134,7 +134,7 @@ pre{
         width: 100%;
         height: 300px;
     }
-    .textvalor{
+    .textvalue{
         position: static;
         top: 50vh;
         padding: 10px;
@@ -157,5 +157,8 @@ pre{
     }
     .contenttec h3{
         font-size: 24px;
+    }
+    .otherimg{
+        width: 15vw;
     }
 }
